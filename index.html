@@ -11,9 +11,24 @@
     .countainer{
         background-color: #353837;
         color:#ffe600;
+        padding-top: 20px;
+    }
+    .gallery-img{
+      cursor: pointer;
+      transition: 0.3s ease;
+      max-width: 100%;
+      height: auto;
+    }
+    .gallery-img:hover{
+      transform: scale(1.05);
     }
     .row{
         background-color: #353837;
+    }
+    #modalImage{
+      max-width:100%;
+      max-height:90vh;
+      object-fit: contain;
     }
    </style>
     
@@ -27,45 +42,94 @@
         <h1><i><u>RESİM GALERİSİ</u></i></h1>
 
         <div class="row">
-          <div class="col-md-3 col-sm-6 my-4">img1</div>
-          <div class="col-md-3 col-sm-6 my-4">img2</div>
-          <div class="col-md-3 col-sm-6 my-4">img3</div>
-          <div class="col-md-3 col-sm-6 my-4">img3</div>
-          
+          <div class="col-md-3 col-sm-6 my-4">
+            <img src="https://picsum.photos/id/15/300/200" class="img-fluid img-thumbnail gallery-img" alt="1" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/15/800/600">
+          </div>
+          <div class="col-md-3 col-sm-6 my-4">
+            <img src="https://picsum.photos/id/16/300/200" class="img-fluid img-thumbnail gallery-img" alt="2" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/16/800/600">
+          </div>
+          <div class="col-md-3 col-sm-6 my-4">
+            <img src="https://picsum.photos/id/17/300/200" class="img-fluid img-thumbnail gallery-img" alt="3" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/17/800/600">
+          </div>
+          <div class="col-md-3 col-sm-6 my-4">
+            <img src="https://picsum.photos/id/18/300/200" class="img-fluid img-thumbnail gallery-img" alt="4" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/18/800/600">
+          </div>
         </div>
-        <div class="row">
-            <div class="col-md-3 col-sm-6 my-4">img1</div>
-            <div class="col-md-3 col-sm-6 my-4">img2</div>
-            <div class="col-md-3 col-sm-6 my-4">img3</div>
-            <div class="col-md-3 col-sm-6 my-4">img3</div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-sm-6 my-4">img1</div>
-            <div class="col-md-3 col-sm-6 my-4">img2</div>
-            <div class="col-md-3 col-sm-6 my-4">img3</div>
-            <div class="col-md-3 col-sm-6 my-4">img3</div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-sm-6 my-4">img1</div>
-            <div class="col-md-3 col-sm-6 my-4">img2</div>
-            <div class="col-md-3 col-sm-6 my-4">img3</div>
-            <div class="col-md-3 col-sm-6 my-4">img3</div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-sm-6 my-4">img1</div>
-            <div class="col-md-3 col-sm-6 my-4">img2</div>
-            <div class="col-md-3 col-sm-6 my-4">img3</div>
-            <div class="col-md-3 col-sm-6 my-4">img3</div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-sm-6 my-4">img1</div>
-            <div class="col-md-3 col-sm-6 my-4">img2</div>
-            <div class="col-md-3 col-sm-6 my-4">img3</div>
-            <div class="col-md-3 col-sm-6 my-4">img3</div>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 my-4">
+          <img src="https://picsum.photos/id/19/300/200" class="img-fluid img-thumbnail gallery-img" alt="1" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/19/800/600">
+        </div>
+        <div class="col-md-3 col-sm-6 my-4">
+          <img src="https://picsum.photos/id/20/300/200" class="img-fluid img-thumbnail gallery-img" alt="2" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/20/800/600">
+        </div>
+        <div class="col-md-3 col-sm-6 my-4">
+          <img src="https://picsum.photos/id/21/300/200" class="img-fluid img-thumbnail gallery-img" alt="3" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/21/800/600">
+        </div>
+        <div class="col-md-3 col-sm-6 my-4">
+          <img src="https://picsum.photos/id/22/300/200" class="img-fluid img-thumbnail gallery-img" alt="4" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/22/800/600">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 my-4">
+        <img src="https://picsum.photos/id/23/300/200" class="img-fluid img-thumbnail gallery-img" alt="1" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/23/800/600">
+      </div>
+      <div class="col-md-3 col-sm-6 my-4">
+        <img src="https://picsum.photos/id/24/300/200" class="img-fluid img-thumbnail gallery-img" alt="2" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/24/800/600">
+      </div>
+      <div class="col-md-3 col-sm-6 my-4">
+        <img src="https://picsum.photos/id/25/300/200" class="img-fluid img-thumbnail gallery-img" alt="3" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/25/800/600">
+      </div>
+      <div class="col-md-3 col-sm-6 my-4">
+        <img src="https://picsum.photos/id/26/300/200" class="img-fluid img-thumbnail gallery-img" alt="4" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/26/800/600">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-sm-6 my-4">
+      <img src="https://picsum.photos/id/27/300/200" class="img-fluid img-thumbnail gallery-img" alt="1" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/27/800/600">
+    </div>
+    <div class="col-md-3 col-sm-6 my-4">
+      <img src="https://picsum.photos/id/28/300/200" class="img-fluid img-thumbnail gallery-img" alt="2" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/28/800/600">
+    </div>
+    <div class="col-md-3 col-sm-6 my-4">
+      <img src="https://picsum.photos/id/29/300/200" class="img-fluid img-thumbnail gallery-img" alt="3" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/29/800/600">
+    </div>
+    <div class="col-md-3 col-sm-6 my-4">
+      <img src="https://picsum.photos/id/30/300/200" class="img-fluid img-thumbnail gallery-img" alt="4" data-toggle="modal" data-target="#imageModal" data-img="https://picsum.photos/id/30/800/600">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-body text-center p-0">
+        <img src="" id="modalImage" class="img-fluid rounded" alt="Büyük Görsel">
+      </div>
+      <div class="modal-footer border-0 justify-content-center">
+        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Kapat</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      $('.gallery-img').on('click', function () {
+        var imgSrc = $(this).data('img');
+      $('#modalImage').attr('src', imgSrc); 
+    });
+    
+    $('#imageModal').on('hidden.bs.modal', function () {
+            $('#modalImage').attr('src', ''); 
+          });
+    </script>
+    
 </body>
 </html>
